@@ -1,0 +1,27 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../img/bg.jpg') no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+}

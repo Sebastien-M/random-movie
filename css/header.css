@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1c1c1c;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-grow: 1;
+}
+
+#formother {
+    display: flex;
+}
+
+#other {
+    background-color: #00394f;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+#other:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+.loading {
+    opacity: 0;
+    padding-right: 7%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+h1 {
+    transition: 0.5s;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: #00394f;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
