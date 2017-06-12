@@ -20,7 +20,7 @@
             }
             function search(){
                 $random = rand (0 ,89000);
-                $api_key = "PUT API KEY HERE";
+                $api_key = file_get_contents("auth.txt");
                 while(get_http_response_code("https://api.themoviedb.org/3/movie/".$random."?api_key=".$api_key) != "200"){
                     $random = rand (0 ,89000);
                 }
