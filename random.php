@@ -30,7 +30,7 @@
             }
             $poster_path = "http://image.tmdb.org/t/p/w185/";
             $film = search();
-            while($film["adult"] === "true"){
+            while($film["adult"] === true){
                 $film = search();
             }
             $titre = $film["title"];
