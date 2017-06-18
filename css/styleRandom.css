@@ -24,6 +24,16 @@ main {
     margin: auto;
 }
 
+.titre {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 img {
     width: 200px;
 }

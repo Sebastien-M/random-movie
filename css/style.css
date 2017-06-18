@@ -14,7 +14,8 @@ body {
     color: white;
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -46,6 +47,7 @@ form {
     background-color: #00394f;
     transition: 0.5s;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #send:hover {
@@ -60,4 +62,41 @@ form {
     margin: 0;
     text-align: center;
     padding: 10px 0 10px 0;
+}
+
+
+/*POPULAR MOVIES*/
+
+.popularMovies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.poster {
+    transition: 0.5s;
+}
+
+.poster:hover {
+    filter: brightness(0.2);
+}
+
+.movieTitle {
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
 }

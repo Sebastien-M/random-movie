@@ -19,10 +19,10 @@
                 return substr($headers[0], 9, 3);
             }
             function search(){
-                $random = rand (0 ,89000);
+                $random = rand (0 ,100000);
                 $api_key = file_get_contents("auth.txt");
                 while(get_http_response_code("https://api.themoviedb.org/3/movie/".$random."?api_key=".$api_key) != "200"){
-                    $random = rand (0 ,89000);
+                    $random = rand (0 ,100000);
                 }
                 $json = file_get_contents("https://api.themoviedb.org/3/movie/".$random."?api_key=".$api_key);
                 $obj = json_decode($json,true);
@@ -38,10 +38,10 @@
             $note = $film["vote_average"];
             $votes = $film["vote_count"];
             $film_img = "http://image.tmdb.org/t/p/w185/".$film["poster_path"];
-            echo "\n    <p>".$titre."</p>";
+            echo "\n    <p class='titre'>".$titre."</p>";
             echo "\n    <p class='description'>".$resume."</p>";
-            echo "\n    <p>Note : ".$note."/10</p>";
-            echo "\n    <p>Votes : ".$votes."</p>";
+            echo "\n    <p class='note'>Note : ".$note."/10</p>";
+            echo "\n    <p class='votes'>Votes : ".$votes."</p>";
             echo "\n    <img src='".$film_img."' alt='No poster found fot the movie'>";
         ?>
     </main>
