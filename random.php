@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/styleRandom.css">
     <title>Random movie</title>
 </head>
 <body>
@@ -30,7 +30,7 @@
             }
             $poster_path = "http://image.tmdb.org/t/p/w185/";
             $film = search();
-            while($film["adult"] === "true"){
+            while($film["adult"] === true){
                 $film = search();
             }
             $titre = $film["title"];
@@ -39,7 +39,7 @@
             $votes = $film["vote_count"];
             $film_img = "http://image.tmdb.org/t/p/w185/".$film["poster_path"];
             echo "\n    <p>".$titre."</p>";
-            echo "\n    <p>".$resume."</p>";
+            echo "\n    <p class='description'>".$resume."</p>";
             echo "\n    <p>Note : ".$note."/10</p>";
             echo "\n    <p>Votes : ".$votes."</p>";
             echo "\n    <img src='".$film_img."' alt='No poster found fot the movie'>";
