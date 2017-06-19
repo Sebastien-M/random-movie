@@ -76,7 +76,8 @@ form {
 .popular {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
 }
 
 .movies {
@@ -84,6 +85,7 @@ form {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .poster {
