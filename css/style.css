@@ -63,7 +63,9 @@ form {
     text-align: center;
     padding: 10px 0 10px 0;
 }
-
+.popularbutton{
+    margin-top: 10px;
+}
 
 /*POPULAR MOVIES*/
 
@@ -101,4 +103,28 @@ form {
     top: 40%;
     text-align: center;
     width: 100%;
+}
+.movies>p{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+.movies>i{
+    position: absolute;
+    top: 60%;
+    text-align: center;
+    width: 100%;
+}
+.note{
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    opacity:1;
+}
+.note>p{
+    margin-bottom: 0;
+}
+.movieTitle,.note{
+    /*opacity: 0;*/
 }

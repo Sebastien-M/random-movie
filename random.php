@@ -7,11 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/styleRandom.css">
     <title>Random movie</title>
+    <?php
+    session_start();
+    $_SESSION['page'] = "random.php";
+    ?>
 </head>
 <body>
-    
-    <?php include("header.php"); ?>
-    
+    <?php include("parts/header.php"); ?>
     <main>
         <?php
             function get_http_response_code($url) {
@@ -45,7 +47,6 @@
             echo "\n    <img src='".$film_img."' alt='No poster found fot the movie'>";
         ?>
     </main>
-    
     <script src="https://use.fontawesome.com/d0fbf177e4.js"></script>
     <script src="js/header.js"></script>
 </body>
