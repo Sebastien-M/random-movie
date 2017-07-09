@@ -27,3 +27,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.formcontainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    border-radius: 10px;
+    width:100%;
+     background-color: #1c1c1c;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding:10px;
+}

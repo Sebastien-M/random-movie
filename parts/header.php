@@ -5,28 +5,26 @@
     </a>
 
     <?php
-    if ($_SESSION["page"] === 'random.php'){
-        echo "<form id='formother' action='' method='POST'>".
-        "<button id='other' type='submit'>".
-        "Get another movie".
-        "<span class='loading'>".
-        "<i class='fa fa-cog fa-spin fa-fw'></i>".
-        "<span id='loading'>Loading...</span>".
-        "</span>".
-        "</button>".
+    if ($_SESSION["page"] === 'random.php') {
+        echo "<form id='formother' action='' method='POST'>" .
+        "<button id='other' type='submit'>" .
+        "Get another movie" .
+        "<span class='loading'>" .
+        "<i class='fa fa-cog fa-spin fa-fw'></i>" .
+        "<span id='loading'>Loading...</span>" .
+        "</span>" .
+        "</button>" .
         "</form>";
-    }
-
-    else{
-        echo "<div id='formother'>".
-        "<a href='signIn.php'>".
-        "<button id='usrButton' type='submit'>".
-        "<div class='usrIcon'>".
-        "<i class='fa fa-user' aria-hidden='true'></i>".
-        "</div>".
-        "Sign up / Sign in".
-        "</button>".
-        "</a>".
+    } else {
+        echo "<div id='formother'>" .
+        "<a href='signup.php'>" .
+        "<button id='usrButton' type='submit'>" .
+        "<div class='usrIcon'>" .
+        "<i class='fa fa-user' aria-hidden='true'></i>" .
+        "</div>" .
+        "Sign up / Sign in" .
+        "</button>" .
+        "</a>" .
         "</div>";
     }
     ?>

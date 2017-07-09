@@ -98,12 +98,7 @@ form {
     filter: brightness(0.2);
 }
 
-.movieTitle {
-    position: absolute;
-    top: 40%;
-    text-align: center;
-    width: 100%;
-}
+
 .movies>p{
     position: absolute;
     top: 50%;
@@ -116,12 +111,25 @@ form {
     text-align: center;
     width: 100%;
 }
+.movieTitle {
+    transition: 0.5s;
+
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+
 .note{
+    pointer-events: none;
+    transition: 0.5s;
+
     position: absolute;
     text-align: center;
     bottom: 10px;
-    opacity:1;
 }
+
 .note>p{
     margin-bottom: 0;
 }
