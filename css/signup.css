@@ -28,7 +28,7 @@ body {
     align-items: center;
 }
 .formcontainer{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,4 +42,16 @@ form{
      align-items: center;
      justify-content: center;
      padding:10px;
+}
+form>input{
+    height:30px;
+    border:none;
+    border-radius: 5px;
+}
+#submit{
+    margin-top: 10px;
+    width: 90%;
+}
+form>label{
+    margin-top: 10px;
 }

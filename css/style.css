@@ -95,7 +95,7 @@ form {
 }
 
 .poster:hover {
-    filter: brightness(0.2);
+    filter: brightness(0.1);
 }
 
 
@@ -124,12 +124,16 @@ form {
 .note{
     pointer-events: none;
     transition: 0.5s;
-
     position: absolute;
     text-align: center;
     bottom: 10px;
 }
-
+.details{
+    justify-content: center;
+    display: flex;
+    transition:0.5s;
+    opacity:0;
+}
 .note>p{
     margin-bottom: 0;
 }

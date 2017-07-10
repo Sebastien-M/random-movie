@@ -18,15 +18,15 @@ and open the template in the editor.
         ?>
         <div class="formcontainer">
         <form action="" method="POST">
-            <label for="pseudo">pseudo</label>
+            <label for="pseudo">Pseudo</label>
             <input type="text" id="pseudo" name="pseudo">
-            <label for="email">email</label>
+            <label for="email">Email</label>
             <input type="text" id="email" name="email">
-            <label for="password">password</label>
+            <label for="password">Password</label>
             <input type="text" id="password" name="password">
             <label for="passwordconfirm">Confirm password</label>
             <input type="text" id="passwordconfirm" name="passwordconfirm">
-            <input type="submit" value="Submit">
+            <input id="submit" type="submit" value="Submit">
         </form>
             </div>
         <script src="https://use.fontawesome.com/d0fbf177e4.js"></script>

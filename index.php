@@ -36,10 +36,12 @@ include_once("parts/header.php");
         for ($i=0; $i < 10; $i++) { 
             echo "<div class='movie".$i." movies'>";
             echo "<img class='poster' src='http://image.tmdb.org/t/p/w185/".$json['results'][$i]['poster_path']."' alt='movie poster'>";
+            echo "<div class='details details".$i."'>";
             echo "<h4 class='movieTitle'>".$json['results'][$i]["title"]."</h4>";
             echo "<div class='note'>";
             echo "<p>".$json['results'][$i]['vote_average']."</p>";
             echo "<i class='fa fa-star' aria-hidden='true'></i>";
+            echo "</div>";
             echo "</div>";
             echo "</div>";
         }
